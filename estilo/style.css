@@ -3,29 +3,45 @@
 * {
     margin: 0px;
     padding: 0px;
-    font-family:arial, helvetica, sans-serif;
 }
 
-html {
+html, body {
     background-color: black;
+    height: 100vh;
+    width: 100vw;
 }
 
-body {
-    position:relative;
-    background-image:url(../imagens/fundo-madeira.jpg);
-    height: 100%vh;
-    width: 100%vw;
+main {
+    position: relative;
+    background: url(../imagens/fundo-madeira.jpg) no-repeat top center;
+    background-size: cover;
+
+    height: 100vh;
+    width: 100vw;
 }
 
-#celular {
-    position:absolute;
-    left:50%;
+section#celular {
+    position: absolute;
+    left: 50%;
     top: 50%;
-    
+    transform: translate(-50%, -50%);
 
-    transform: translate(-50%);
-
-    background: url(../imagens/frame-iphone.png);
+    background: blue url(../imagens/frame-iphone.png);
     height: 627px;
     width: 311px;
 }
+
+section#rede-social {
+    text-align: right;
+    padding-top: 30px;
+    padding-right: 24px;
+
+}
+
+section#rede-social img {
+    border-radius: 50%;
+    height: 50px;
+    margin: 4px;
+    
+}
+
