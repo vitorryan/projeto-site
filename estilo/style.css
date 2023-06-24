@@ -6,16 +6,16 @@
 }
 
 html, body {
-    background-color: black;
+    position: relative;
+    background: black url(../imagens/fundo-madeira.jpg) no-repeat top center;
+    background-size: cover;
+    background-attachment: fixed;
+
     height: 100vh;
     width: 100vw;
 }
 
 main {
-    position: relative;
-    background: url(../imagens/fundo-madeira.jpg) no-repeat top center;
-    background-size: cover;
-
     height: 100vh;
     width: 100vw;
 }
@@ -26,7 +26,7 @@ section#celular {
     top: 50%;
     transform: translate(-50%, -50%);
 
-    background: blue url(../imagens/frame-iphone.png);
+    background:  url(../imagens/frame-iphone.png) no-repeat;
     height: 627px;
     width: 311px;
 }
@@ -43,5 +43,14 @@ section#rede-social img {
     height: 50px;
     margin: 4px;
     
+}
+
+iframe#tela {
+    height: 470px;
+    width: 266px;
+
+    position: relative;
+    top: 80px;
+    left: 22px;
 }
 
