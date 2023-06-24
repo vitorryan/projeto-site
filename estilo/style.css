@@ -39,9 +39,18 @@ section#rede-social {
 }
 
 section#rede-social img {
+    box-sizing: border-box;
     border-radius: 50%;
     height: 50px;
     margin: 4px;
+    
+    
+}
+
+section#rede-social img:hover {
+    border: 2px solid white;
+    transform: translate(-3px, -3px);
+    transition: transform .4s, border .6s;
     
 }
 
